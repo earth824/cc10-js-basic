@@ -297,7 +297,7 @@
 // console.log(NaN === NaN);
 // console.log(Object.is(NaN, NaN));
 
-const gender = 'F';
+// const gender = 'F';
 
 // if (gender === 'M') {
 //   alert('Gentleman')
@@ -320,7 +320,7 @@ const gender = 'F';
 //   alert('OMG')
 // }
 
-const num = 20;
+// const num = 20;
 // let text;
 
 // if (num % 2 === 0) {
@@ -403,8 +403,367 @@ const num = 20;
 //   i = i +5
 // }
 
-const boolean = 'a' || 9 || 'bngh' || null;
-const boolean1 = null || undefined || 0 || '' || NaN;
-console.log(boolean);
-const an = 20 && 'undefined' && 'Hello' && 'null';
-console.log(an);
+// const boolean = 'a' || 9 || 'bngh' || null;
+// const boolean1 = null || undefined || 0 || '' || NaN;
+// console.log(boolean);
+// const an = 20 && 'undefined' && 'Hello' && 'null';
+// console.log(an);
+
+// Lab 8.3
+// const myName = prompt('Guess my name');
+
+// if (myName === 'John') {
+//   alert('ถูกต้อง')
+// } else {
+//   alert('ผิด')
+// }
+
+// Lab 8.4
+// const num = prompt('Enter number');
+// '  abc   ' => 'abc'
+// ' abc  '.trim() => 'abc'
+// const a = 20;
+// a.trim();
+
+// if (num === null || num === '' || num.trim() === '' || isNaN(num)) {
+//   // if (num === '' || num.trim() === '' || num === null) { Error
+//   alert('Invalid number');
+// } else {
+//   const convertNum = +num;
+//   if (convertNum > 0) {
+//     alert('Positive number');
+//   } else if (convertNum === 0) {
+//     alert('Zero');
+//   } else {
+//     alert('negative number');
+//   }
+// }
+
+// Lab 8.5
+
+function isNumber(num) {
+  // #1
+  // if (num === null || num === '' || num.trim() === '' || isNaN(num)) {
+  //   return false;
+  // }
+  // return true;
+  // #2
+  // return num === null || num === '' || num.trim() === '' || isNaN(num) ? false : true;
+  // #3
+  return !(num === null || num === '' || num.trim() === '' || isNaN(num));
+}
+
+// const input = prompt('Enter number');
+
+// if (isNumber(input)) {
+//   if (+input % 2 === 0) {
+//     alert('Even');
+//   } else {
+//     alert('Odd');
+//   }
+// } else {
+//   alert('Invalid Number');
+// }
+
+// Lab 8.6
+// const input1 = prompt('Enter number 1');
+// const input2 = prompt('Enter number 2');
+
+// // a && b = !a || !b
+// if (isNumber(input1) && isNumber(input2)) {
+//   alert(+input1 + +input2);
+// } else {
+//   alert('Invalid number');
+// }
+
+// if (!isNumber(input1) || !isNumber(input2)) {
+//   alert('Invalid number');
+// } else {
+//   alert(+input1 + +input2);
+// }
+
+// Lab 8.7
+// const username = prompt('Enter Username');
+// const password = prompt('Enter Password');
+
+// if (username === '') {
+//   alert('Username is required');
+//   if (password === '') {
+//     alert('Password is required');
+//   }
+// } else if (password === '') {
+//   alert('Password is required');
+// } else {
+//   if ((username === 'admin' && password === '1234') || (username === 'john' && password === 'qwerty')) {
+//     alert(`Hello ${username}`);
+//   } else {
+//     alert('invalid username or password');
+//   }
+// }
+
+// Lab 8.8
+// const score = prompt('Enter score');
+
+// if (!isNumber(score)) {
+//   alert('Invalid score');
+// } else {
+//   if (score >= 80) {
+//     alert('A');
+//   } else if (score >= 70) {
+//     alert('B');
+//   } else if (score >= 60) {
+//     alert('C');
+//   } else if (score >= 50) {
+//     alert('D');
+//   } else {
+//     alert('F');
+//   }
+// }
+
+// Lab 8.9
+// let age = prompt('How old are you');
+// let message = age >= 18 ? 'Allowed' : 'Not allowed';
+
+// Lab 8.10
+// let login = prompt('Enter username');
+// let message = login === 'Employee' ? 'Hello' : login === 'Director' ? 'Greetings' : login === '' ? 'No login' : '';
+
+// Lab 8.11
+// const score = prompt('Enter score');
+// !isNumber(score)
+//   ? alert('Invalid Score')
+//   : score >= 80
+//   ? alert('A')
+//   : score >= 70
+//   ? alert('B')
+//   : score >= 60
+//   ? alert('C')
+//   : score >= 50
+//   ? alert('D')
+//   : alert('F');
+
+// Lab 9.1
+// const input = prompt('Enter number');
+// switch (input) {
+//   case '1':
+//     alert('One');
+//     break;
+//   case '0':
+//     alert('Zero');
+//     break;
+//   case '-1':
+//     alert('Minus Zero');
+//     break;
+//   default:
+//     alert('Invalid Number');
+// }
+
+// Lab 9.2
+// let a = +prompt('a?');
+// switch (a) {
+//   case 0:
+//     alert(0);
+//     break;
+//   case 1:
+//     alert(1);
+//     break;
+//   case 2:
+//   case 3:
+//     alert('2,3');
+//     break;
+// }
+
+// Lab 9.3
+// const browser = prompt('Enter browser')
+// if (browser === 'Edge') {
+//   alert("You've got the Edge!");
+// } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+//   alert('Okay we support these browsers too');
+// } else {
+//   alert('We hope that this page looks ok!');
+// }
+
+// Lab 10.3
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let i = 1;
+// while (i <= 100) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+// Lab 10.4
+// let sum = 0;
+// let sumOdd = 0;
+// let sumEven = 0;
+// let result = 0;
+
+// for (let i = 1; i <= 100; i++) {
+//   sum += i;
+//   if (i % 2) {
+//     sumOdd += i;
+//   } else {
+//     sumEven += i;
+//     result += i ** 2;
+//   }
+
+//   if (i % 3 === 0) {
+//     result -= i ** 2;
+//   }
+// }
+
+// console.log(sum);
+// console.log(sumOdd);
+// console.log(sumEven);
+// console.log(result);
+
+// Lab 10.5
+// let balance = 100000;
+// // interest * balance / 100
+// // newBalance = balance + interest * balance / 100
+// // Lab 10.5
+// for (let i = 1; i <= 10; i++) {
+//   // #1
+//   // balance = balance + 2.5 * balance / 100
+//   // #2
+//   balance += (2.5 * balance) / 100;
+// }
+
+// console.log(balance.toFixed(2));
+
+// Lab 10.6
+// let str = ''; // * * * *
+// for (let i = 1; i <= 4; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     // if (j <= i) {
+//     str += '* ';
+//     // }
+//   }
+//   str = str.trim() + '\n';
+// }
+// // Iteration 1: i = 1, j = 1, str = '* '
+// // Iteration 2: i = 1, j = 2, str = '* * ' มันควรจะเป็น '* '
+// // Iteration 3: i = 1, j = 3, str = '* * * ' มันควรจะเป็น '* '
+// // Iteration 4: i = 1, j = 4, str = '* * * * ' มันควรจะเป็น '* '
+// // Iteration 5: i = 2, j = 1, str = '* * * *\n* '
+// // ...
+// // Iteration 16: str => '* * * *\n* * * * \n* * * * \n* * * * *\n'
+
+// // const str1 = 'a\nb';
+// // console.log(str1);
+// console.log(str);
+
+// Lab 10.7
+// let str = '';
+// for (let i = 2; i <= 12; i++) {
+//   for (let j = 1; j <= 12; j++) {
+//     str += `${i} x ${j} = ${i * j}\n`;
+//   }
+//   str += '\n';
+// }
+// console.log(str);
+
+// Lab 10.8
+// let input;
+// let sum = 0;
+// let count = 0;
+// do {
+//   input = prompt('Enter number');
+//   if (+input > 0) {
+//     sum += +input;
+//     count++;
+//   }
+// } while (input !== null && input !== '0' && input !== '' && +input > 0);
+// // while (input && +input > 0);
+// alert(sum);
+// alert(sum / count);
+
+// Lab 10.9
+// const answer = prompt('Enter correct number');
+
+// if (+answer <= 0 || +answer > 100) {
+//   alert('Correct number must be between 1 and 100');
+// } else {
+//   let guess;
+//   let count = 0;
+//   do {
+//     guess = prompt('Enter guess number');
+//     count++;
+//     if (guess < answer) {
+//       alert('Less than answer');
+//     } else if (guess > answer) {
+//       alert('Greater than answer');
+//     } else {
+//       alert('Correct');
+//       alert(count);
+//     }
+//   } while (guess !== answer);
+// }
+
+// Lab 10.10
+// C = a * b ex. 25 = 5 * 5
+// for (let i = 2; i <= 100; i++) {
+//   let isPrime = true;
+//   for (let j = 2; j < i; j++) {
+//     // for (let j = 2; j < Math.sqrt(i); j++) {
+//     if (i % j === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime === true) {
+//     //or if (isPrime) {
+//     console.log(i);
+//   }
+// }
+
+// Lab 11.3
+// let user = prompt('Enter username');
+
+// #1
+// if (user === null || user === '') {
+//   user = 'Guest';
+// }
+
+// if (user === 'codecamp') {
+//   const password = prompt('Enter password');
+//   if (password === '123456') {
+//     user = 'codecamp';
+//   } else {
+//     alert('Wrong password');
+//   }
+// } else {
+//   user = 'Guest';
+// }
+
+// #2
+// if (user !== 'codecamp') {
+//   user = 'Guest';
+// } else {
+//   const password = prompt('Enter password');
+//   if (password === '123456') {
+//     // user = 'codecamp';
+//   } else {
+//     alert('Wrong password');
+//   }
+// }
+
+// #3
+// let user = prompt('Enter username') || 'Guest';
+// if (user !== 'codecamp') {
+//   user = 'Guest';
+//   alert(`Welcome ${user}`);
+// } else {
+//   const password = prompt('Enter password');
+//   if (password !== '123456') {
+//     alert('Wrong password');
+//   } else {
+//     alert(`Welcome ${user}`);
+//   }
+// }
